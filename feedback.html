@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Share Your Feedback</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="68ef56c5-1b29-4976-af79-a02e25fe1d4f">
+            <input type="text" name="name" placeholder="Your Name" class="contact-input">
+            <input type="email" name="email" placeholder="Your Email" class="contact-input">
+            <textarea name="message" placeholder="Request the Music you want to add" class="contact-input"></textarea>
+            <button type="submit">Submit <img src="rightarrow.svg" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img id="image" src="right.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>

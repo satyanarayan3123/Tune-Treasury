@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <form id="my-form" onsubmit="validateForm()">
+            <h1>Sign up</h1>
+            <div class="form-input">
+                <input type="text" id="Username" placeholder="Username" name="Username" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(252, 250, 250);transform: ;msFilter:;"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg>
+            </div>
+
+            <div class="form-input" >
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <svg id="form-input" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(249, 247, 247);transform: ;msFilter:;"><path d="M17 8V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2H9V7c0-1.654 1.346-3 3-3s3 1.346 3 3v1h2z"></path></svg>
+            </div>
+
+            <div class="form-input">
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(253, 252, 252);transform: ;msFilter:;"><path d="M11.488 21.754c.294.157.663.156.957-.001 8.012-4.304 8.581-12.713 8.574-15.104a.988.988 0 0 0-.596-.903l-8.05-3.566a1.005 1.005 0 0 0-.813.001L3.566 5.747a.99.99 0 0 0-.592.892c-.034 2.379.445 10.806 8.514 15.115zM8.674 10.293l2.293 2.293 4.293-4.293 1.414 1.414-5.707 5.707-3.707-3.707 1.414-1.414z"></path></svg>
+            </div>
+
+            <button type="submit" class="btn">Register Now</button>
+            <div class="login-link">
+                <p>Already Have an Account? <a href="login.html">Log in</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+    function validateForm() {
+        var Username = document.getElementById("Username").value;
+        var password = document.getElementById("password").value;
+        var cpassword = document.getElementById("cpassword").value;
+        if(password==cpassword){
+            window.location.assign("index.html")
+            alert("Successfully Signed Into Music Player!")
+        }
+        else{
+            alert("Password does not match!")
+        }
+    }
+
+    const forminput = document.querySelector('#form-input');
+
+    forminput.addEventListener('click',()=>{
+        const passwordInput = document.getElementById('password');
+        if(passwordInput.type ==='password'){
+            passwordInput.type = 'text';
+        }else{
+            passwordInput.type = 'password';
+        }
+    })
+    </script>
+</body>
+</html>

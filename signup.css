@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(sign.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: white;
+    border-radius: 13px;
+    padding: 30px 40px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 39px;
+    font-weight: 600;
+    padding-bottom: 26px;
+    letter-spacing: 0.5px;
+}
+
+.container .form-input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.form-input input{
+   width: 100%; 
+   height: 100%;
+   background-color: transparent;
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 40px;
+   font-size: 16px;
+   color: white;
+   padding: 20px 45px 20px 20px;
+}
+
+#form-input{
+    cursor: pointer;
+}
+
+.form-input input::placeholder{
+    color: white;
+}
+
+svg{
+    position: absolute;
+    right: 10px;
+    top: 25%;
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 550;
+    transition: all .4s ease-in-out;
+}
+
+.container .btn:hover{
+    transform: scale(1.05);
+}
+
+.login-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link p a:hover{
+    text-decoration: underline;
+}
+
+.container .login-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+@media (max-width:530px) and (min-width:200px){
+    .container{
+        width: 370px;
+    }
+}

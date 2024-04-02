@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tune Treasury: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlity.css">
+</head>
+
+<body>
+    <div class="container flex bg-back">
+        <div class="left">
+            <div class="close">
+                <img src="close.svg" alt="">
+            </div>
+            <div class="home rounded m-1 p-1">
+                <div class="logo"><img width="35" height="35" src="tune.png" alt="">Tune Treasury</div>
+                <ul>
+                    <li class="green"><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li class="yellow"><img class="invert" src="search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2 class="black">My Library</h2>
+                </div>
+                <div class="songlist">
+                    <ul class="abc">
+
+                    </ul>
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="#" id="fb-share-button"><img src="facebook.svg" alt=""></a>
+                    <a href="#" id="twitter-share-button"><img src="twitter.svg" alt=""></a>
+                    <a href="#" id="instagram-share-button"><img src="instagram.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="header">
+                <label id="dark-change"></label>
+                <div class="nav">
+                    <div class="hamburgericon">
+                        <img width="40" class="invert hamburger" src="hamburger.svg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="feedback.html"><button id="feedbackButton">Feedback</button></a>
+                    <a href="signup.html"> <button class="signupbtn">Sign up</button></a>
+                    <a href="login.html"><button class="loginbtn">Log in</button> </a>
+                </div>
+            </div>
+            <div class="Playlists">
+                <h2 class="white">My Playlists</h2>
+                <div class="cardContainer">
+                    <div data-folder="ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebd7cab806bfea5d3965caebb6" alt="">
+                        <h2>lofi beats</h2>
+                        <p>chill beats, lofi vibes, new tracks every week...</p>
+                    </div>
+                    <div data-folder="cs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273f5d4bc22ccb74bc5c6b3a8cd" alt="">
+                        <h2>Chillout Lounge</h2>
+                        <p>Just lean back and enjoy relaxed beats.</p>
+                    </div>
+                    <div data-folder="jazz" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732f30a09c82d8fb56b5c6e4e1" alt="">
+                        <h2>Jazz in the Back...</h2>
+                        <p>Soft instrumental Jazz for all your activites.</p>
+                    </div>
+                    <div data-folder="kishorekumar" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://resources.tidal.com/images/88d6441f/30fd/497e/8710/7bbdc1f6d9e1/640x640.jpg"
+                            alt="">
+                        <h2>Kishore Kumar</h2>
+                        <p>This is Kishore Kumar. The essential tracks.</p>
+                    </div>
+                    <div data-folder="80s" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2736dd1fddc1683a3f213b7b5f2" alt="">
+                        <h2>All Out 80s</h2>
+                        <p>The biggest songs of 1980s. Cover: Michael...</p>
+                    </div>
+                    <div data-folder="srm" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2739cde5943483793644b15bcc2" alt="">
+                        <h2>Stress Relief</h2>
+                        <p>Calm your mind from anxitey with gentle piano...</p>
+                    </div>
+                    <div data-folder="00s" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e0202ef23e492fb485d08068845ab67616d00001e0219beb7ceaa4fb95633718305ab67616d00001e021da0a37c5bad81580d49ef05ab67616d00001e02bd848c36d02a36a7610d9641"
+                            alt="">
+                        <h2>All Out 00's Hindi</h2>
+                        <p>Bollywood songs that ruled hearts in Y2K...</p>
+                    </div>
+                    <div data-folder="rock" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b27374ff7d712e99531010035be8" alt="">
+                        <h2>Rock Classics</h2>
+                        <p>Rock legends & epic songs that continue to inspire...</p>
+                    </div>
+                    <div data-folder="ca" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb4605c0b478e5bfa261935e80" alt="">
+                        <h2>Calming Acoustic</h2>
+                        <p>Keep calm with instrumental acoustic...</p>
+                    </div>
+                    <div data-folder="pop" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002dacb9df57cac5cf6d0376b5a" alt="">
+                        <h2>Pop Rising</h2>
+                        <p>Chill your mind with hit Pop songs...</p>
+                    </div>
+                    <div data-folder="lounge" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000204c4c53344f46e15b169eedf" alt="">
+                        <h2>Lounge-Soft Ho..</h2>
+                        <p>Soft house music for your laidback moments...</p>
+                    </div>
+                    <div data-folder="viral" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d971c6c23114fc7636dc23eb"
+                            alt="">
+                        <h2>Viral Hits</h2>
+                        <p>Viral, trending and taking off...</p>
+                    </div>
+                    <div data-folder="ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebd7cab806bfea5d3965caebb6" alt="">
+                        <h2>lofi beats</h2>
+                        <p>chill beats, lofi vibes, new tracks every week...</p>
+                    </div>
+                    <div data-folder="cs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273f5d4bc22ccb74bc5c6b3a8cd" alt="">
+                        <h2>Chillout Lounge</h2>
+                        <p>Just lean back and enjoy relaxed beats.</p>
+                    </div>
+                    <div data-folder="jazz" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732f30a09c82d8fb56b5c6e4e1" alt="">
+                        <h2>Jazz in the Back...</h2>
+                        <p>Soft instrumental Jazz for all your activites.</p>
+                    </div>
+                    <div data-folder="kishorekumar" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://resources.tidal.com/images/88d6441f/30fd/497e/8710/7bbdc1f6d9e1/640x640.jpg"
+                            alt="">
+                        <h2>Kishore Kumar</h2>
+                        <p>This is Kishore Kumar. The essential tracks.</p>
+                    </div>
+                    <div data-folder="80s" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2736dd1fddc1683a3f213b7b5f2" alt="">
+                        <h2>All Out 80s</h2>
+                        <p>The biggest songs of 1980s. Cover: Michael...</p>
+                    </div>
+                    <div data-folder="srm" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2739cde5943483793644b15bcc2" alt="">
+                        <h2>Stress Relief</h2>
+                        <p>Calm your mind from anxitey with gentle piano...</p>
+                    </div>
+                    <div data-folder="00s" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e0202ef23e492fb485d08068845ab67616d00001e0219beb7ceaa4fb95633718305ab67616d00001e021da0a37c5bad81580d49ef05ab67616d00001e02bd848c36d02a36a7610d9641"
+                            alt="">
+                        <h2>All Out 00's Hindi</h2>
+                        <p>Bollywood songs that ruled hearts in Y2K...</p>
+                    </div>
+                    <div data-folder="rock" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b27374ff7d712e99531010035be8" alt="">
+                        <h2>Rock Classics</h2>
+                        <p>Rock legends & epic songs that continue to inspire...</p>
+                    </div>
+                    <div data-folder="ca" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb4605c0b478e5bfa261935e80" alt="">
+                        <h2>Calming Acoustic</h2>
+                        <p>Keep calm with instrumental acoustic...</p>
+                    </div>
+                    <div data-folder="pop" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002dacb9df57cac5cf6d0376b5a" alt="">
+                        <h2>Pop Rising</h2>
+                        <p>Chill your mind with hit Pop songs...</p>
+                    </div>
+                    <div data-folder="lounge" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000204c4c53344f46e15b169eedf" alt="">
+                        <h2>Lounge-Soft Ho..</h2>
+                        <p>Soft house music for your laidback moments...</p>
+                    </div>
+                    <div data-folder="viral" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d971c6c23114fc7636dc23eb"
+                            alt="">
+                        <h2>Viral Hits</h2>
+                        <p>Viral, trending and taking off...</p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img width="28" id="previous" src="presong.svg" alt="">
+                            <img width="28" id="play" src="play.svg" alt="">
+                            <img width="28" id="next" src="nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime">
+
+                            </div>
+                            <div class="volume">
+                                <img width="30" src="volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
